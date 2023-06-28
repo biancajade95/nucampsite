@@ -44,3 +44,7 @@ jumbotron{
 .navbar-toggler {
     margin-left: auto;
 }
+
+.accordion-button {
+    background-color: #d3d3d3;
+  }
