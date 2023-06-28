@@ -31,7 +31,16 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 md-xl-2 mt-4">
-                    <a href="#reserveForm"><button type="button" class="btn btn-info text-white btn-lg">Reserve a Campsite</button></a>
+                    <a href="#reserveForm" 
+                    role="button" 
+                    class="btn btn-lg btn-info" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    data-bs-html="true" 
+                    title="Or call us at <br/>
+                    <strong>1-206-555-1234</strong>"> 
+                    Reserve a Campsite
+                    </a>
                 </div>
             </div>
         </div>
@@ -166,6 +175,10 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))    
+     </script>
     
 </body>
 </html>
