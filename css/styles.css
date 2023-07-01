@@ -43,3 +43,23 @@ jumbotron {
 
 .carousel {
   border: solid #5637dd; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: white; }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+.review-section {
+  background: beige; }
+
+.campsite-btn {
+  background: #0dcaf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 60%; }
