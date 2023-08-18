@@ -1,59 +1,82 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+  font-family: "Lobster", cursive;
+}
 
 h2 {
-  color: #3046C5; }
+  color: #3046C5;
+}
 
 header {
   padding: 30px;
   background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-  color: white; }
+  color: white;
+}
 
 header h2 {
-  color: #CEC8FF; }
+  color: #CEC8FF;
+}
 
 footer {
   background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
+  padding: 20px 0;
+}
 
 jumbotron {
   padding: 48px;
   background-image: linear-gradient to right, #5637dd, #3046C5, #60106b;
-  color: white; }
+  color: white;
+}
 
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
-  min-height: 200px; }
+  min-height: 200px;
+}
 
 .navbar {
-  background-color: #901CAD; }
+  background-color: #901CAD;
+}
 
 .navbar-toggler {
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 .accordion-button {
-  background-color: #d3d3d3; }
+  background-color: #d3d3d3;
+}
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .carousel {
-  border: solid #5637dd; }
+  border: solid #5637dd;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
 
 #loginModal .modal-header {
   background-color: #901CAD;
-  color: white; }
+  color: white;
+}
 
 #reserveModal .modal-header {
   background-color: #17A2B8;
-  color: white; }
+  color: white;
+}
 
 .review-section {
-  background: beige; }
+  background: beige;
+}
 
 .campsite-btn {
   background: #0dcaf0;
@@ -62,4 +85,7 @@ jumbotron {
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  width: 60%; }
+  width: 60%;
+}
+
+/*# sourceMappingURL=styles.css.map */
