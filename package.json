@@ -2,7 +2,7 @@
   "name": "nucampsite",
   "version": "1.0.0",
   "description": "This is a website for a fictional campsites review website, called Nucamp.",
-  "main": "index.html",
+  "source": "index.html",
   "scripts": {
     "babel": "babel js/* -d js",
     "build": "npm run clean && npm run copyjs && npm run babel && npm run imagemin && npm run copyfonts && npm run usemin",
@@ -12,7 +12,7 @@
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "start": "npm run watch:all",
+    "start": "parcel --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
@@ -29,6 +29,7 @@
     "node-sass": "^8.0.0",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
+    "parcel": "^2.9.3",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
@@ -37,7 +38,7 @@
     "copyfiles": "^2.2.0",
     "font-awesome": "^4.7.0",
     "usemin-cli": "^0.6.0"
-  }
+  },
+  "main": "index.js",
+  "keywords": []
 }
-
-"author": "Airidas, Bianca, ilona",

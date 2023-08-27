@@ -54,6 +54,12 @@
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    <!-- Weather Component -->
+                    <div id="weather" class="d-none d-md-flex align-items-center">
+                        <i id="weather-icon"></i>
+                        <span id="weather-temp"></span>
+                        <span id="weather-description" class="d-none d-lg-inline"></span>
+                    </div>
                 </ul>
                 <span class="navbar-text ms-auto">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -196,14 +202,9 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-danger btn-sm" id="carouselPause">
-                            <i class="fa-solid fa fa-pause"></i>
-                        </button>
-                        <button class="btn btn-info btn-sm" id="carouselPlay">
-                            <i class="fa-solid fa fa-play"></i>
-                        </button>
-                    </div>
+                    <button class="btn btn-info btn-sm" id="carouselButton">
+                        <i class="fa-solid fa fa-pause" id="faButton"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -300,7 +301,7 @@
 
     <!-- build:js js/main.js-->
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" type="module"></script>
     <!-- endbuild  -->
     
 </body>
